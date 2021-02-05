@@ -25,8 +25,6 @@ Route::get('categories/{category:slug}', [CategoryController::class, 'show'])->n
 Route::get('tags/{tag:slug}', [TagController::class, 'show'] )->name('tag.show');
 Route::get('posts/show/{post:slug}', [PostController::class, 'show'])->name('posts.show');
 
-Auth::routes();
-
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::view('/contact', 'contact');
