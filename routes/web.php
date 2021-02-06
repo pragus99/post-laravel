@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\HomeController;
@@ -24,6 +23,8 @@ Route::middleware('auth')->prefix('posts')->group(function () {
 Route::get('categories/{category:slug}', [CategoryController::class, 'show'])->name('category.show');
 Route::get('tags/{tag:slug}', [TagController::class, 'show'] )->name('tag.show');
 Route::get('posts/show/{post:slug}', [PostController::class, 'show'])->name('posts.show');
+
+Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
