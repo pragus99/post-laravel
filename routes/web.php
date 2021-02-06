@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\HomeController;
@@ -30,4 +31,3 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::view('/contact', 'contact');
 Route::view('/about', 'about');
-
