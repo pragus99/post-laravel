@@ -1,3 +1,5 @@
 ## About post-app
 
-Website ini merupakan proyek pribadi pertama yang saya pelajari melalui channel youtube Parsinta yang berjudul belajar laravel 7 dari awal.
+This app web can post an article with your account or admin which have high level where admin can delete and edit user's article . unfortunately, you can't register because i deactived it. if you want to use it, you can contact me.
+
+Website : http://post-lavel.herokuapp.com/
